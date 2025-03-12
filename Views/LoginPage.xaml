@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProjectDraft.Views.LoginPage"
+             Title="">
+    <Grid RowDefinitions="*, Auto">
+
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout
+                VerticalOptions="Start"
+                Padding="30,0,30,100"
+                Spacing="25">
+
+                <Image
+                    HorizontalOptions="Center"
+                    Source="logolabel.png"
+                    WidthRequest="290"  
+                    Margin="0,30,0,-10"               
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="Main page image"/> 
+
+
+                <Label Text="Влез в своя профил"
+                   Margin="0,20,0,0"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+                <Label Text="Вход за потребители. Ако сте фирма, натиснете отдолу:"
+                    Margin="15,0"
+                    FontSize="16"
+                    FontAttributes="None"
+                    HorizontalOptions="Start"/>
+
+                <Label Text="Вход за фирми"  
+                    Margin="15,-20,0,0"
+                    TextColor="{StaticResource LogoPurple}"  
+                    FontSize="16" 
+                    FontAttributes="Bold" 
+                    HorizontalOptions="Start"/>
+
+                <Label Text="Въведете Вашите данни:"
+                    Margin="15,10,0,0"
+                    FontSize="16"
+                    FontAttributes="None"
+                    HorizontalOptions="Start"/>
+
+
+                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" BorderColor="{StaticResource LogoPurple}">
+                    <Entry x:Name="EmailEntry"
+                       Placeholder="Имейл"
+                       PlaceholderColor="{StaticResource Gray300}"
+                       Keyboard="Email"
+                       TextColor="Black"
+                       FontSize="15"
+                       BackgroundColor="Transparent"/>   
+                </Frame>
+
+
+
+                <Frame CornerRadius="50" HeightRequest="80"  BorderColor="{StaticResource LogoPurple}" >
+                    <Entry x:Name="PasswordEntry"
+                       Placeholder="Парола"
+                       PlaceholderColor="{StaticResource Gray300}"
+                       TextColor="Black"
+                       FontSize="15"
+                       BackgroundColor="Transparent"/>   
+                </Frame>
+
+                <HorizontalStackLayout HorizontalOptions="Start" Padding="10,0" Spacing="10">
+                    <CheckBox x:Name="RememberMeCheckBox" VerticalOptions="Center" Color="{StaticResource LogoPurple}" />
+                    <Label Text="Запомни ме" Margin="-10,0"
+                        VerticalOptions="Center"
+                        FontSize="14"
+                        TextColor="Black"/>
+                </HorizontalStackLayout>
+
+                <Frame Margin="0,20,0,0" 
+                    BackgroundColor="{StaticResource LogoPurple}" 
+                    Padding="20,15" 
+                    WidthRequest="130" 
+                    CornerRadius="50" 
+                    BorderColor="{StaticResource LogoPurple}"
+                    HasShadow="True">
+
+                    <!--<Frame.Shadow>
+                        <Shadow Brush="Black" 
+                            Radius="10" 
+                            Opacity="0.5" />
+                    </Frame.Shadow>-->
+
+                    <Label Text="Вход" 
+                            TextColor="{StaticResource LogoPurpleLight}"  
+                            FontSize="16" 
+                            FontAttributes="Bold" 
+                            HorizontalOptions="Center"/>
+                </Frame>
+
+
+                <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="10" Margin="0,-5,0,0">
+                    <Label Text="Забравена парола"  
+                        TextColor="{StaticResource LogoPurple}"  
+                        FontSize="16" 
+                        FontAttributes="Bold" 
+                        HorizontalOptions="Center"/>
+
+                    <BoxView WidthRequest="2" 
+                        HeightRequest="20" 
+                        BackgroundColor="{StaticResource LogoPurple}" 
+                        VerticalOptions="Center"/>
+
+                    <Label Text="Регистрация"  
+                        TextColor="{StaticResource LogoPurple}"  
+                        FontSize="16" 
+                        FontAttributes="Bold" 
+                        HorizontalOptions="Center"/>
+                </HorizontalStackLayout>
+
+
+
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+
+        <!--<FlexLayout Grid.Row="1"
+                Direction="Column"
+                AlignItems="Center"
+                JustifyContent="Center"
+                Padding="10"
+                BackgroundColor="{StaticResource LogoYellow}">
+
+            <Label Text=" aaaaaaaaaaaaaa"
+               TextColor="Black"
+               FontSize="16"
+               Background="{StaticResource LogoGreen}"
+               Padding="100,5"/>
+
+            <Label Text="Headstarter 2025"
+               TextColor="Black"
+               FontSize="16"
+               Background="{StaticResource LogoGreen}"
+               Padding="100,5"/>
+        </FlexLayout>-->
+
+    </Grid>
+</ContentPage>
