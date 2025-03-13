@@ -6,24 +6,31 @@ namespace MauiProjectDraft
 {
     public partial class AppShell : Shell
     {
-        
-            public AppShell()
+        public AppShell()
+        {
+            InitializeComponent();
+
+            Routing.RegisterRoute("login", typeof(Views.LoginPage));
+            Routing.RegisterRoute("signup", typeof(Views.SignupPage));
+
+            NavigateToLoginCommand = new Command(async () =>
             {
-                InitializeComponent();
+                await Shell.Current.GoToAsync("login");
+                Shell.Current.FlyoutIsPresented = false; 
+            });
 
-                Routing.RegisterRoute("login", typeof(Views.LoginPage));
+            NavigateToSignUpCommand = new Command(async () =>
+            {
+                await Shell.Current.GoToAsync("signup");
+                Shell.Current.FlyoutIsPresented = false; 
+            });
 
-                NavigateToLoginCommand = new Command(async () => await Shell.Current.GoToAsync("login"));
-
-
-                Routing.RegisterRoute("signup", typeof(Views.SignupPage));
-
-                NavigateToSignUpCommand = new Command(async () => await Shell.Current.GoToAsync("signup"));
+            Navigating += (s, e) => Shell.Current.FlyoutIsPresented = false;
 
             BindingContext = this;
-            }
-
-            public ICommand NavigateToLoginCommand { get; }
-            public ICommand NavigateToSignUpCommand { get; }
         }
+
+        public ICommand NavigateToLoginCommand { get; }
+        public ICommand NavigateToSignUpCommand { get; }
     }
+}

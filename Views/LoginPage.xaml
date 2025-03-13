@@ -26,7 +26,7 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-                <Label Text="Вход за потребители. Ако сте фирма, натиснете отдолу:"
+                <!--<Label Text="Вход за потребители. Ако сте фирма, натиснете отдолу:"
                     Margin="15,0"
                     FontSize="16"
                     FontAttributes="None"
@@ -37,7 +37,7 @@
                     TextColor="{StaticResource LogoPurple}"  
                     FontSize="16" 
                     FontAttributes="Bold" 
-                    HorizontalOptions="Start"/>
+                    HorizontalOptions="Start"/>-->
 
                 <Label Text="Въведете Вашите данни:"
                     Margin="15,10,0,0"
@@ -75,49 +75,50 @@
                         TextColor="Black"/>
                 </HorizontalStackLayout>
 
-                <Frame Margin="0,20,0,0" 
-                    BackgroundColor="{StaticResource LogoPurple}" 
-                    Padding="20,15" 
-                    WidthRequest="130" 
-                    CornerRadius="50" 
-                    BorderColor="{StaticResource LogoPurple}"
-                    HasShadow="True">
+                <Frame Padding="10,10" HorizontalOptions="Center" HeightRequest="70" WidthRequest="120"
+                   BackgroundColor="{StaticResource LogoPurple}"  
+                   CornerRadius="50" 
+                   BorderColor="{StaticResource LogoPurple}">
 
-                    <!--<Frame.Shadow>
-                        <Shadow Brush="Black" 
-                            Radius="10" 
-                            Opacity="0.5" />
-                    </Frame.Shadow>-->
-
-                    <Label Text="Вход" 
-                            TextColor="{StaticResource LogoPurpleLight}"  
-                            FontSize="16" 
-                            FontAttributes="Bold" 
-                            HorizontalOptions="Center"/>
+                    <Button Text="Вход"
+                        x:Name="NavigateToProfile"
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource LogoPurpleLight}"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        BorderWidth="0"
+                        Clicked="NavigateToProfileCommand"/>
                 </Frame>
 
 
+
                 <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="10" Margin="0,-5,0,0">
-                    <Label Text="Забравена парола"  
+                    <Button Text="Забравена парола"  
+                        x:Name="NavigateToForgottenPassword"
                         TextColor="{StaticResource LogoPurple}"  
+                        BackgroundColor="Transparent"
                         FontSize="16" 
                         FontAttributes="Bold" 
-                        HorizontalOptions="Center"/>
+                        VerticalOptions="Center"
+                        Padding="0"
+                        Clicked="NavigateToForgottenPasswordCommand"/>
 
                     <BoxView WidthRequest="2" 
-                        HeightRequest="20" 
-                        BackgroundColor="{StaticResource LogoPurple}" 
-                        VerticalOptions="Center"/>
+                     HeightRequest="20" 
+                     BackgroundColor="{StaticResource LogoPurple}" 
+                     VerticalOptions="Center"/>
 
-                    <Label Text="Регистрация"  
+                    <Button Text="Регистрация"  
+                        x:Name="NavigateToSingup"
                         TextColor="{StaticResource LogoPurple}"  
+                        BackgroundColor="Transparent"
                         FontSize="16" 
                         FontAttributes="Bold" 
-                        HorizontalOptions="Center"/>
+                        VerticalOptions="Center"
+                        Padding="0"
+                        Clicked="NavigateToSignupCommand"/>
                 </HorizontalStackLayout>
-
-
-
 
 
             </VerticalStackLayout>

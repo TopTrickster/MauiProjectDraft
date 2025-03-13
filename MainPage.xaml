@@ -33,7 +33,8 @@
                 <Label                   
                     Text="Намери своя талант."
                     TextColor="Black"
-                    FontSize="28"
+                    FontSize="30"
+                    FontAttributes="Bold"
                     HorizontalTextAlignment="Center"/>
                 
                 

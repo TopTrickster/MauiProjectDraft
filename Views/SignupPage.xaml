@@ -26,7 +26,7 @@
                     FontAttributes="Bold"
                     HorizontalOptions="Center"/>
 
-                <Label Text="Регистрация за потребители. Ако сте фирма, натиснете отдолу:"
+                <!--<Label Text="Регистрация за потребители. Ако сте фирма, натиснете отдолу:"
                     Margin="15,0"
                     FontSize="16"
                     FontAttributes="None"
@@ -37,7 +37,7 @@
                     TextColor="{StaticResource LogoPurple}"  
                     FontSize="16" 
                     FontAttributes="Bold" 
-                    HorizontalOptions="Start"/>
+                    HorizontalOptions="Start"/>-->
 
                 <Label Text="Въведете Вашите имена:"
                     Margin="15,10,0,0"
@@ -129,48 +129,39 @@
                         TextColor="Black"/>
                 </HorizontalStackLayout>
 
-                <Frame Margin="0,20,0,0" 
-                    BackgroundColor="{StaticResource LogoPurple}" 
-                    Padding="20,15" 
-                    WidthRequest="180" 
-                    CornerRadius="50" 
-                    BorderColor="{StaticResource LogoPurple}"
-                    HasShadow="True">
+                <Frame Padding="10,10" HorizontalOptions="Center" HeightRequest="70" WidthRequest="180"
+                   BackgroundColor="{StaticResource LogoPurple}"  
+                   CornerRadius="50" 
+                   BorderColor="{StaticResource LogoPurple}">
 
-                    <!--<Frame.Shadow>
-                        <Shadow Brush="Black" 
-                            Radius="10" 
-                            Opacity="0.5" />
-                    </Frame.Shadow>-->
-
-                    <Label Text="Регистрация" 
-                            TextColor="{StaticResource LogoPurpleLight}"  
-                            FontSize="16" 
-                            FontAttributes="Bold" 
-                            HorizontalOptions="Center"/>
+                    <Button Text="Регистрация"
+                        x:Name="NavigateToEmailVerification"
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource LogoPurpleLight}"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        BorderWidth="0"
+                        Clicked="NavigateToEmailVerificationCommand"/>
                 </Frame>
 
-
-
-                <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="10" Margin="0,-5,0,0">
+                <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="5" Margin="0,-5,0,0">
                     <Label Text="Имате акаунт?"  
-                        TextColor="black"  
-                        FontSize="16" 
-                        FontAttributes="Bold" 
-                        HorizontalOptions="Center"/>
+                       TextColor="black"  
+                       FontSize="16" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="Center"/>
 
-
-                    <Label Text="Вход"  
+                    <Button Text="Вход"  
+                        x:Name="NavigateToLogin"
                         TextColor="{StaticResource LogoPurple}"  
+                        BackgroundColor="Transparent"
                         FontSize="16" 
                         FontAttributes="Bold" 
-                        HorizontalOptions="Center"/>
+                        VerticalOptions="Center"
+                        Padding="0"
+                        Clicked="NavigateToLoginCommand"/>
                 </HorizontalStackLayout>
-
-
-
-
-
 
 
             </VerticalStackLayout>
