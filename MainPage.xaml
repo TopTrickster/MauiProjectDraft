@@ -31,7 +31,7 @@
                 </Frame>
                 
                 <Label                   
-                    Text="Намери своя талант."
+                    Text="Намери своя талант"
                     TextColor="Black"
                     FontSize="30"
                     FontAttributes="Bold"

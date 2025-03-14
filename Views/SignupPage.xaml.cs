@@ -9,11 +9,13 @@ public partial class SignupPage : ContentPage
 
     private async void NavigateToEmailVerificationCommand(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("emailverification"); 
+        //await Shell.Current.GoToAsync("emailverification"); 
+        await Navigation.PushAsync(new EmailVerificationPage());
     }
 
     private async void NavigateToLoginCommand(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("login"); 
+        //await Shell.Current.GoToAsync("login"); 
+        await Navigation.PushAsync(new LoginPage());
     }
 }

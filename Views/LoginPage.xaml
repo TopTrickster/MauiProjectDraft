@@ -75,22 +75,20 @@
                         TextColor="Black"/>
                 </HorizontalStackLayout>
 
-                <Frame Padding="10,10" HorizontalOptions="Center" HeightRequest="70" WidthRequest="120"
-                   BackgroundColor="{StaticResource LogoPurple}"  
-                   CornerRadius="50" 
-                   BorderColor="{StaticResource LogoPurple}">
+                
 
-                    <Button Text="Вход"
+                <Button Text="Вход" 
+                        BackgroundColor="{StaticResource LogoPurple}"
                         x:Name="NavigateToProfile"
-                        BackgroundColor="Transparent"
+                        HeightRequest="65" WidthRequest="120"
+                        CornerRadius="50"
                         TextColor="{StaticResource LogoPurpleLight}"
                         FontSize="16"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                        BorderWidth="0"
+                        BorderWidth="2"
+                        BorderColor="{StaticResource LogoPurple}"
                         Clicked="NavigateToProfileCommand"/>
-                </Frame>
-
 
 
                 <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="10" Margin="0,-5,0,0">

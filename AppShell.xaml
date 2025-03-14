@@ -11,25 +11,30 @@
         <Grid BackgroundColor="{StaticResource Gray100}" Padding="15,30">
             <HorizontalStackLayout Spacing="15" HorizontalOptions="Start">
 
-                <Frame BackgroundColor="{StaticResource LogoPurple}" Padding="10,10" HorizontalOptions="Center" HeightRequest="70" WidthRequest="100" CornerRadius="50" BorderColor="{StaticResource LogoPurple}">
-                    <Button Text="Вход"
-                            Command="{Binding NavigateToLoginCommand}"
-                            BackgroundColor="Transparent"
-                            TextColor="{StaticResource LogoPurpleLight}"
-                            FontSize="16"
-                            FontAttributes="Bold"
-                            BorderWidth="0"/>
-                </Frame>
 
-                <Frame BackgroundColor="{StaticResource LogoPurpleLight}" Padding="10,10" CornerRadius="50" HeightRequest="70" WidthRequest="160" BorderColor="{StaticResource LogoPurple}">
-                    <Button Text="Регистрация"
-                            Command="{Binding NavigateToSignUpCommand}"
-                            BackgroundColor="Transparent"
-                            TextColor="{StaticResource LogoPurple}"
-                            FontSize="16"
-                            FontAttributes="Bold"
-                            BorderWidth="0"/>
-                </Frame>
+                <Button Text="Вход" 
+                    BackgroundColor="{StaticResource LogoPurple}"
+                    Command="{Binding NavigateToLoginCommand}"
+                    HeightRequest="60" WidthRequest="100"
+                    CornerRadius="50"
+                    TextColor="{StaticResource LogoPurpleLight}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="2"
+                    BorderColor="{StaticResource LogoPurple}"/>
+
+                <Button Text="Регистрация" 
+                    BackgroundColor="{StaticResource LogoPurpleLight}"
+                    Command="{Binding NavigateToSignUpCommand}"
+                    HeightRequest="60" WidthRequest="160"
+                    CornerRadius="50"
+                    TextColor="{StaticResource LogoPurple}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="1"
+                    BorderColor="{StaticResource LogoPurple}"/>
 
             </HorizontalStackLayout>
         </Grid>

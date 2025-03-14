@@ -87,7 +87,7 @@
 
 
 
-                    <Frame CornerRadius="50" HeightRequest="80"  BorderColor="{StaticResource LogoPurple}" >
+                <Frame CornerRadius="50" HeightRequest="80"  BorderColor="{StaticResource LogoPurple}" >
                     <Entry x:Name="PasswordEntry"
                         Placeholder="Парола"
                         PlaceholderColor="{StaticResource Gray300}"
@@ -129,7 +129,7 @@
                         TextColor="Black"/>
                 </HorizontalStackLayout>
 
-                <Frame Padding="10,10" HorizontalOptions="Center" HeightRequest="70" WidthRequest="180"
+                <!--<Frame Padding="10,10" HorizontalOptions="Center" HeightRequest="70" WidthRequest="180"
                    BackgroundColor="{StaticResource LogoPurple}"  
                    CornerRadius="50" 
                    BorderColor="{StaticResource LogoPurple}">
@@ -143,7 +143,20 @@
                         HorizontalOptions="Center"
                         BorderWidth="0"
                         Clicked="NavigateToEmailVerificationCommand"/>
-                </Frame>
+                </Frame>-->
+
+                <Button Text="Регистрация" 
+                    BackgroundColor="{StaticResource LogoPurple}"
+                    x:Name="NavigateToEmailVerification"
+                    HeightRequest="65" WidthRequest="180"
+                    CornerRadius="50"
+                    TextColor="{StaticResource LogoPurpleLight}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="2"
+                    BorderColor="{StaticResource LogoPurple}"
+                    Clicked="NavigateToEmailVerificationCommand"/>
 
                 <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="5" Margin="0,-5,0,0">
                     <Label Text="Имате акаунт?"  
