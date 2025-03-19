@@ -21,6 +21,7 @@
 
 
                 <Label Text="Влез в своя профил"
+                   TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                    Margin="0,20,0,0"
                    FontSize="30"
                    FontAttributes="Bold"
@@ -40,61 +41,62 @@
                     HorizontalOptions="Start"/>-->
 
                 <Label Text="Въведете Вашите данни:"
+                    TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                     Margin="15,10,0,0"
                     FontSize="16"
                     FontAttributes="None"
                     HorizontalOptions="Start"/>
 
 
-                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" BorderColor="{StaticResource LogoPurple}">
+                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
                     <Entry x:Name="EmailEntry"
                        Placeholder="Имейл"
                        PlaceholderColor="{StaticResource Gray300}"
                        Keyboard="Email"
-                       TextColor="Black"
+                       TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                        FontSize="15"
                        BackgroundColor="Transparent"/>   
                 </Frame>
 
 
 
-                <Frame CornerRadius="50" HeightRequest="80"  BorderColor="{StaticResource LogoPurple}" >
+                <Frame CornerRadius="50" HeightRequest="80" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
                     <Entry x:Name="PasswordEntry"
                        Placeholder="Парола"
                        PlaceholderColor="{StaticResource Gray300}"
-                       TextColor="Black"
+                       TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                        FontSize="15"
                        BackgroundColor="Transparent"/>   
                 </Frame>
 
                 <HorizontalStackLayout HorizontalOptions="Start" Padding="10,0" Spacing="10">
-                    <CheckBox x:Name="RememberMeCheckBox" VerticalOptions="Center" Color="{StaticResource LogoPurple}" />
+                    <CheckBox x:Name="RememberMeCheckBox" VerticalOptions="Center" Color="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
                     <Label Text="Запомни ме" Margin="-10,0"
                         VerticalOptions="Center"
                         FontSize="14"
-                        TextColor="Black"/>
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"/>
                 </HorizontalStackLayout>
 
                 
 
                 <Button Text="Вход" 
-                        BackgroundColor="{StaticResource LogoPurple}"
+                        BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                         x:Name="NavigateToProfile"
                         HeightRequest="65" WidthRequest="120"
                         CornerRadius="50"
-                        TextColor="{StaticResource LogoPurpleLight}"
+                        TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
                         FontSize="16"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
                         BorderWidth="2"
-                        BorderColor="{StaticResource LogoPurple}"
+                        BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                         Clicked="NavigateToProfileCommand"/>
 
 
                 <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="10" Margin="0,-5,0,0">
                     <Button Text="Забравена парола"  
                         x:Name="NavigateToForgottenPassword"
-                        TextColor="{StaticResource LogoPurple}"  
+                        TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                         BackgroundColor="Transparent"
                         FontSize="16" 
                         FontAttributes="Bold" 
@@ -104,12 +106,12 @@
 
                     <BoxView WidthRequest="2" 
                      HeightRequest="20" 
-                     BackgroundColor="{StaticResource LogoPurple}" 
+                     BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                      VerticalOptions="Center"/>
 
                     <Button Text="Регистрация"  
                         x:Name="NavigateToSingup"
-                        TextColor="{StaticResource LogoPurple}"  
+                        TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                         BackgroundColor="Transparent"
                         FontSize="16" 
                         FontAttributes="Bold" 

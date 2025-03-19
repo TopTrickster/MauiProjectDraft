@@ -5,19 +5,131 @@
 
     <Grid RowDefinitions="*, Auto">
 
+        <!--<ActivityIndicator 
+    IsRunning="True" 
+    IsVisible="True"
+    Color="Blue"/>-->
+
         <ScrollView Grid.Row="0">
             <VerticalStackLayout
                 VerticalOptions="Start"
-                Padding="30,0"
+                Padding="30,0,30,100"
                 Spacing="25">
 
-                <Image
-                    HorizontalOptions="Center"
-                    Source="logolabel.png"
-                    WidthRequest="290"  
-                    Margin="0,30,0,-10"               
-                    Aspect="AspectFit"
-                    SemanticProperties.Description="Main page image" />
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+                    <Label 
+                        Margin="0,0,3,0"
+                        Text="HEAD"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
+
+                    <Image 
+                        Source="headstarter_logo2.png"
+                        HeightRequest="38"
+                        Aspect="AspectFit"/>
+
+                    <Label 
+                        Margin="3,0,0,0"
+                        Text="TARTER"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+                </HorizontalStackLayout>
+
+
+
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+
+                    <Image 
+                        Margin="0,0,5,0"
+                        Source="headstarter_logo.png"
+                        HeightRequest="38"
+                        Aspect="AspectFit"/>
+
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="HEAD"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="STARTER"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+
+                    <Image 
+                        Margin="0,0,5,0"
+                        Source="headstarter_logo2.png"
+                        HeightRequest="38"
+                        Aspect="AspectFit"/>
+
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="HEAD"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="STARTER"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="HEAD"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="STARTER"
+                        FontSize="40"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+
+
+                    <Image 
+                        Margin="5,0,0,0"
+                        Source="headstarter_logo.png"
+                        HeightRequest="38"
+                        Aspect="AspectFit"/>
+
+
+                </HorizontalStackLayout>
+
+
 
                 <Image
                     HorizontalOptions="Center"
@@ -26,13 +138,13 @@
                     Aspect="AspectFit"
                     SemanticProperties.Description="Main page image" />
 
-                <Frame Margin="0,20,0,0" CornerRadius="50" BorderColor="{StaticResource LogoYellow}">
-                    <SearchBar x:Name="SearchBar" />
+                <Frame Margin="0,20,0,0" CornerRadius="50" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                    <SearchBar x:Name="SearchBar" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"  />
                 </Frame>
                 
                 <Label                   
                     Text="Намери своя талант"
-                    TextColor="Black"
+                    TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                     FontSize="30"
                     FontAttributes="Bold"
                     HorizontalTextAlignment="Center"/>
@@ -43,7 +155,7 @@
         </ScrollView>
 
 
-        <FlexLayout Grid.Row="1"
+        <!--<FlexLayout Grid.Row="1"
                     Direction="Column"
                     AlignItems="Center"
                     JustifyContent="Center"
@@ -61,7 +173,7 @@
                    FontSize="16"
                    Background="{StaticResource LogoGreen}"
                    Padding="100,5"/>
-        </FlexLayout>
+        </FlexLayout>-->
 
     </Grid>
 

@@ -8,33 +8,33 @@
     BackgroundColor="White">
 
     <Shell.FlyoutHeader>
-        <Grid BackgroundColor="{StaticResource Gray100}" Padding="15,30">
+        <Grid BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}" Padding="15,30">
             <HorizontalStackLayout Spacing="15" HorizontalOptions="Start">
 
 
                 <Button Text="Вход" 
-                    BackgroundColor="{StaticResource LogoPurple}"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     Command="{Binding NavigateToLoginCommand}"
                     HeightRequest="60" WidthRequest="100"
                     CornerRadius="50"
-                    TextColor="{StaticResource LogoPurpleLight}"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
                     FontSize="16"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
                     BorderWidth="2"
-                    BorderColor="{StaticResource LogoPurple}"/>
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"/>
 
                 <Button Text="Регистрация" 
-                    BackgroundColor="{StaticResource LogoPurpleLight}"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource LogoOrangeLight}}"
                     Command="{Binding NavigateToSignUpCommand}"
                     HeightRequest="60" WidthRequest="160"
                     CornerRadius="50"
-                    TextColor="{StaticResource LogoPurple}"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     FontSize="16"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
                     BorderWidth="1"
-                    BorderColor="{StaticResource LogoPurple}"/>
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"/>
 
             </HorizontalStackLayout>
         </Grid>
@@ -47,12 +47,12 @@
                     <VisualStateGroup Name="CommonStates">
                         <VisualState Name="Normal">
                             <VisualState.Setters>
-                                <Setter Property="BackgroundColor" Value="Transparent"/>
+                                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
                             </VisualState.Setters>
                         </VisualState>
                         <VisualState Name="Selected">
                             <VisualState.Setters>
-                                <Setter Property="BackgroundColor" Value="{StaticResource LogoPurple}" />
+                                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>
