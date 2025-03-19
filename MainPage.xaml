@@ -18,11 +18,11 @@
 
                 <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
                     <Label 
-                        Margin="0,0,3,0"
+                        Margin="0,0,0,0"
                         Text="HEAD"
-                        FontSize="40"
-                        FontFamily="Boldnose"
-                        FontAttributes="Bold"
+                        FontSize="44"
+                        FontFamily="LilitaOne"
+                        FontAttributes="None"
                         TextColor="{StaticResource LogoGreen}"
                         />
 
@@ -32,18 +32,43 @@
                         Aspect="AspectFit"/>
 
                     <Label 
-                        Margin="3,0,0,0"
+                        Margin="0,0,0,0"
                         Text="TARTER"
-                        FontSize="40"
-                        FontFamily="Boldnose"
-                        FontAttributes="Bold"
+                        FontSize="44"
+                        FontFamily="LilitaOne"
+                        FontAttributes="None"
                         TextColor="{StaticResource LogoOrange}"
                         />
                 </HorizontalStackLayout>
 
 
+                <Image
+                    HorizontalOptions="Center"
+                    Source="headstarter_picture.png"
+                    HeightRequest="240"               
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="Main page image" />
 
-                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+                <Frame Margin="0,20,0,0" CornerRadius="50" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                    <SearchBar x:Name="SearchBar" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"  />
+                </Frame>
+                
+                <Label                   
+                    Text="Намери своя талант"
+                    TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"/>
+                
+                
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+
+
+
+        <!--<HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
 
                     <Image 
                         Margin="0,0,5,0"
@@ -129,30 +154,42 @@
 
                 </HorizontalStackLayout>
 
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+
+                    <Image 
+                        Margin="0,0,5,0"
+                        Source="headstarter_logo.png"
+                        HeightRequest="30"
+                        Aspect="AspectFit"/>
 
 
-                <Image
-                    HorizontalOptions="Center"
-                    Source="headstarter_picture.png"
-                    HeightRequest="240"               
-                    Aspect="AspectFit"
-                    SemanticProperties.Description="Main page image" />
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="HEAD"
+                        FontSize="30"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
 
-                <Frame Margin="0,20,0,0" CornerRadius="50" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
-                    <SearchBar x:Name="SearchBar" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"  />
-                </Frame>
-                
-                <Label                   
-                    Text="Намери своя талант"
-                    TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
-                    FontSize="30"
-                    FontAttributes="Bold"
-                    HorizontalTextAlignment="Center"/>
-                
-                
+                    <Image 
+                        Margin="0,0,0,0"
+                        Source="headstarter_logo2.png"
+                        HeightRequest="30"
+                        Aspect="AspectFit"/>
 
-            </VerticalStackLayout>
-        </ScrollView>
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="TARTER"
+                        FontSize="30"
+                        FontFamily="Boldnose"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+                </HorizontalStackLayout>-->
+
+
+
 
 
         <!--<FlexLayout Grid.Row="1"

@@ -11,13 +11,31 @@
                 Padding="30,0,30,100"
                 Spacing="25">
 
-                <Image
-                    HorizontalOptions="Center"
-                    Source="logolabel.png"
-                    WidthRequest="290"  
-                    Margin="0,30,0,-10"               
-                    Aspect="AspectFit"
-                    SemanticProperties.Description="Main page image"/> 
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="HEAD"
+                        FontSize="44"
+                        FontFamily="LilitaOne"
+                        FontAttributes="None"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
+
+                    <Image 
+                        Source="headstarter_logo2.png"
+                        HeightRequest="38"
+                        Aspect="AspectFit"/>
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="TARTER"
+                        FontSize="44"
+                        FontFamily="LilitaOne"
+                        FontAttributes="None"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+                </HorizontalStackLayout>
+
 
 
                 <Label Text="Влез в своя профил"
