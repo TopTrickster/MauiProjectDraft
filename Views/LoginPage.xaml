@@ -123,9 +123,9 @@
                         Clicked="NavigateToForgottenPasswordCommand"/>
 
                     <BoxView WidthRequest="2" 
-                     HeightRequest="20" 
-                     BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                     VerticalOptions="Center"/>
+                        HeightRequest="20" 
+                        BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                        VerticalOptions="Center"/>
 
                     <Button Text="Регистрация"  
                         x:Name="NavigateToSingup"
