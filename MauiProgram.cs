@@ -16,7 +16,8 @@ public static class MauiProgram
 				fonts.AddFont("Boldnose-Regular.ttf", "Boldnose");
 				fonts.AddFont("Barriecito-Regular.ttf", "Barriecito");
 				fonts.AddFont("LilitaOne-Regular.ttf", "LilitaOne");
-			});
+                fonts.AddFont("materialdesignicons-webfont.ttf", "icons");
+            });
 
 #if DEBUG
 		builder.Logging.AddDebug();

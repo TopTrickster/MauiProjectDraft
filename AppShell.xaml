@@ -42,7 +42,7 @@
 
     <Shell.ItemTemplate>
         <DataTemplate>
-            <Grid Padding="15" ColumnDefinitions="40, *">
+            <Grid Padding="15" ColumnDefinitions="40, *"  HorizontalOptions="Fill">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup Name="CommonStates">
                         <VisualState Name="Normal">
@@ -58,29 +58,30 @@
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
 
-                <Image Source="{Binding Icon}" WidthRequest="28" VerticalOptions="Center" Margin="5,5,0,0"/>
+
+                <Label FontFamily="icons" Text="{Binding Icon}" FontSize="30" Margin="5,5,0,0" />
                 <Label Text="{Binding Title}" VerticalOptions="Center" Grid.Column="1" Margin="15,5,0,0"/>
             </Grid>
         </DataTemplate>
     </Shell.ItemTemplate>
 
-    <FlyoutItem Title="Началo" Icon="home.png">
+    <FlyoutItem Title="Началo" Icon="&#xF02DC;">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Обяви" Icon="search.png">
+    <FlyoutItem Title="Обяви" Icon="&#xF0349;">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Новини" Icon="news.png">
+    <FlyoutItem Title="Новини" Icon="&#xF0395;">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Настройки" Icon="options.png">
+    <FlyoutItem Title="Настройки" Icon="&#xF0493;">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="За нас" Icon="aboutus.png">
+    <FlyoutItem Title="За нас" Icon="&#xF02FC;">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
