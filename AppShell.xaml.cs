@@ -19,9 +19,9 @@ namespace MauiProjectDraft
 
                 NavigateToSignUpCommand = new Command(async () => await Shell.Current.GoToAsync("signup"));
 
-            Navigating += (s, e) => Shell.Current.FlyoutIsPresented = false;
+                Navigating += (s, e) => Shell.Current.FlyoutIsPresented = false;
 
-            BindingContext = this;
+                BindingContext = this;
             }
 
             public ICommand NavigateToLoginCommand { get; private set; }

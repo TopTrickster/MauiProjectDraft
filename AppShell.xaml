@@ -42,7 +42,7 @@
 
     <Shell.ItemTemplate>
         <DataTemplate>
-            <Grid Padding="15" ColumnDefinitions="40, *"  HorizontalOptions="Fill">
+            <Grid Padding="15" ColumnDefinitions="40, *" HorizontalOptions="FillAndExpand">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup Name="CommonStates">
                         <VisualState Name="Normal">
@@ -57,31 +57,29 @@
                         </VisualState>
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
-
-
                 <Label FontFamily="icons" Text="{Binding Icon}" FontSize="30" Margin="5,5,0,0" />
                 <Label Text="{Binding Title}" VerticalOptions="Center" Grid.Column="1" Margin="15,5,0,0"/>
             </Grid>
         </DataTemplate>
     </Shell.ItemTemplate>
 
-    <FlyoutItem Title="Началo" Icon="&#xF02DC;">
+    <FlyoutItem Title="Началo" Icon="{StaticResource IconHome}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Обяви" Icon="&#xF0349;">
+    <FlyoutItem Title="Обяви" Icon="{StaticResource IconBriefcaseSearch}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Новини" Icon="&#xF0395;">
+    <FlyoutItem Title="Новини" Icon="{StaticResource IconNewspaper}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Настройки" Icon="&#xF0493;">
+    <FlyoutItem Title="Настройки" Icon="{StaticResource IconCog}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="За нас" Icon="&#xF02FC;">
+    <FlyoutItem Title="За нас" Icon="{StaticResource IconInformation}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
     </FlyoutItem>
 
