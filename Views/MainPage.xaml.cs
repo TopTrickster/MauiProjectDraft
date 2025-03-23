@@ -1,4 +1,4 @@
-﻿namespace MauiProjectDraft
+﻿namespace MauiProjectDraft.Views
 {
     public partial class MainPage : ContentPage
     {
