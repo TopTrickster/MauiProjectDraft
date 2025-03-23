@@ -18,7 +18,8 @@ namespace MauiProjectDraft
             IsLoaderVisible = true;
             OnPropertyChanged(nameof(IsLoaderVisible));
             InitializeComponent();
-            
+
+
             Routing.RegisterRoute("MainPage", typeof(Views.MainPage));
             Routing.RegisterRoute("login", typeof(Views.LoginPage));
             Routing.RegisterRoute("signup", typeof(Views.SignupPage));

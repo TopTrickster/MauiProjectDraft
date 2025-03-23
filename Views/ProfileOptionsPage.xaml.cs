@@ -19,7 +19,7 @@ public partial class ProfileOptionsPage : ContentPage, INotifyPropertyChanged
     {
         WorkerRecruiterNotSelected = true;
         InitializeComponent();
-        BindingContext = this; // Set the binding context to the current page
+        BindingContext = this; 
     }
     private void OnWorkerSelected(object sender, EventArgs e)
     {

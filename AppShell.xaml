@@ -43,53 +43,6 @@
         </Grid>
     </Shell.FlyoutHeader>
 
-    <!--
-    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
-    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
-    
-    <Shell.ItemTemplate>
-        <DataTemplate>
-            <Grid x:Name="FlyoutItemLayout"
-                  HorizontalOptions="FillAndExpand">
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroupList>
-                        <VisualStateGroup x:Name="CommonStates">
-                            <VisualState x:Name="Normal">
-                                <VisualState.Setters>
-                                    <Setter TargetName="FlyoutItemLayout" Property="Grid.BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
-                                    <Setter TargetName="FlyoutItemImage"  Property="Label.TextColor"      Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
-                                    <Setter TargetName="FlyoutItemLabel"  Property="Label.TextColor"      Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
-                                </VisualState.Setters>
-                            </VisualState>
-                            <VisualState x:Name="Selected">
-                                <VisualState.Setters>
-                                    <Setter TargetName="FlyoutItemLayout" Property="Grid.BackgroundColor" Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
-                                    <Setter TargetName="FlyoutItemImage"  Property="Label.TextColor"      Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
-                                    <Setter TargetName="FlyoutItemLabel"  Property="Label.TextColor"      Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
-                                </VisualState.Setters>
-                            </VisualState>
-                        </VisualStateGroup>
-                    </VisualStateGroupList>
-                </VisualStateManager.VisualStateGroups>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Label x:Name="FlyoutItemImage"
-                   Text="{Binding Icon}"
-                   FontFamily="icon"
-                   FontSize="30"
-                   VerticalOptions="Center">
-                </Label>
-                <Label x:Name="FlyoutItemLabel"
-                       Grid.Column="1"
-                       Text="{Binding Title}"
-                       FontSize="15"
-                       VerticalTextAlignment="Center">
-                </Label>
-            </Grid>
-        </DataTemplate>
-    </Shell.ItemTemplate>-->
 
     <Shell.FlyoutContentTemplate>
         <DataTemplate>
@@ -116,7 +69,7 @@
                                                 <VisualStateGroup x:Name="CommonStates">
                                                     <VisualState x:Name="Normal">
                                                         <VisualState.Setters>
-                                                            <Setter TargetName="FlyoutItemRow"   Property="Grid.BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
+                                                            <Setter TargetName="FlyoutItemRow"   Property="Grid.BackgroundColor"                  Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
                                                             <Setter TargetName="FlyoutItemLabel" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
                                                             <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor"                       Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
                                                             <Setter TargetName="FlyoutItemImage" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
@@ -125,7 +78,7 @@
                                                     </VisualState>
                                                     <VisualState x:Name="Selected">
                                                         <VisualState.Setters>
-                                                            <Setter TargetName="FlyoutItemRow"   Property="Grid.BackgroundColor" Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
+                                                            <Setter TargetName="FlyoutItemRow"   Property="Grid.BackgroundColor"                  Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
                                                             <Setter TargetName="FlyoutItemLabel" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
                                                             <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor"                       Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
                                                             <Setter TargetName="FlyoutItemImage" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
