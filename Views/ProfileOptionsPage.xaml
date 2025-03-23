@@ -55,8 +55,7 @@
                         HeightRequest="65" WidthRequest="140"
                         TextColor="{StaticResource Black}"
                         BackgroundColor="{StaticResource LogoGreen}"
-                        BorderColor="{StaticResource LogoGreen}"
-                          
+                        BorderColor="{StaticResource LogoGreen}"    
                         BorderWidth="2"
                         CornerRadius="50"
                         FontSize="16" 
