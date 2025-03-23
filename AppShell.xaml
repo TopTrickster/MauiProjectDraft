@@ -7,151 +7,43 @@
     xmlns:views="clr-namespace:MauiProjectDraft.Views"
     x:Name="shell"
     x:DataType="local:AppShell"
-    Shell.FlyoutBehavior="Flyout"
-    BackgroundColor="White">
+    Shell.FlyoutBehavior="Disabled">
 
-    <Shell.FlyoutHeader>
-        <Grid BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}" Padding="15,30">
-            <HorizontalStackLayout Spacing="15" HorizontalOptions="Start">
+    <TabBar>
+        <Tab Title="Начало">
+            <Tab.Icon>
+                <FontImageSource FontFamily="icons" Glyph="{StaticResource IconHome}" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
+        
+        <Tab Title="Обяви">
+            <Tab.Icon>
+                <FontImageSource FontFamily="icons" Glyph="{StaticResource IconBriefcaseSearch}" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
 
+        <Tab Title="Новини">
+            <Tab.Icon>
+                <FontImageSource FontFamily="icons" Glyph="{StaticResource IconNewspaper}" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
 
-                <Button Text="Вход" 
-                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                    Command="{Binding NavigateToLoginCommand}"
-                    HeightRequest="60" WidthRequest="100"
-                    CornerRadius="50"
-                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
-                    FontSize="16"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
-                    BorderWidth="2"
-                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"/>
+        <Tab Title="Настройки">
+            <Tab.Icon>
+                <FontImageSource FontFamily="icons" Glyph="{StaticResource IconCog}" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" />
+        </Tab>
 
-                <Button Text="Регистрация" 
-                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource LogoOrangeLight}}"
-                    Command="{Binding NavigateToSignUpCommand}"
-                    HeightRequest="60" WidthRequest="160"
-                    CornerRadius="50"
-                    TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                    FontSize="16"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
-                    BorderWidth="1"
-                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"/>
-
-            </HorizontalStackLayout>
-        </Grid>
-    </Shell.FlyoutHeader>
-
-
-    <Shell.FlyoutContentTemplate>
-        <DataTemplate>
-            <ScrollView>
-                <VerticalStackLayout>
-                    <ActivityIndicator 
-                        BindingContext="{x:Reference shell}"
-                        IsRunning="{Binding IsLoading}" 
-                        IsVisible="{Binding IsLoaderVisible}"
-                        Color="Blue" />
-                    <CollectionView 
-                                    x:Name="FlyoutList"
-                                    BindingContext="{x:Reference shell}"
-                                    IsGrouped="True"
-                                    ItemsSource="{Binding FlyoutItems}"
-                                    x:DataType="local:AppShell"
-                                    SelectionMode="Single"
-                                    SelectionChanged="FlyoutList_SelectionChanged">
-                        <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="FlyoutItem">
-                                    <Grid x:Name="FlyoutItemRow" Padding="15" ColumnDefinitions="50,*">
-                                        <VisualStateManager.VisualStateGroups>
-                                            <VisualStateGroupList>
-                                                <VisualStateGroup x:Name="CommonStates">
-                                                    <VisualState x:Name="Normal">
-                                                        <VisualState.Setters>
-                                                            <Setter TargetName="FlyoutItemRow"   Property="Grid.BackgroundColor"                  Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
-                                                            <Setter TargetName="FlyoutItemLabel" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
-                                                            <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor"                       Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
-                                                            <Setter TargetName="FlyoutItemImage" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
-                                                            <Setter TargetName="FlyoutItemImage" Property="Label.TextColor"                       Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
-                                                        </VisualState.Setters>
-                                                    </VisualState>
-                                                    <VisualState x:Name="Selected">
-                                                        <VisualState.Setters>
-                                                            <Setter TargetName="FlyoutItemRow"   Property="Grid.BackgroundColor"                  Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
-                                                            <Setter TargetName="FlyoutItemLabel" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
-                                                            <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor"                       Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
-                                                            <Setter TargetName="FlyoutItemImage" Property="Label.BackgroundColor"                 Value="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" />
-                                                            <Setter TargetName="FlyoutItemImage" Property="Label.TextColor"                       Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
-                                                        </VisualState.Setters>
-                                                    </VisualState>
-                                                </VisualStateGroup>
-                                            </VisualStateGroupList>
-                                        </VisualStateManager.VisualStateGroups>
-                                        <Label x:Name="FlyoutItemImage"
-                                               BindingContext="{Binding FlyoutIcon}"
-                                               x:DataType="FontImageSource"
-                                               Text="{Binding Glyph}"
-                                               Grid.Column="0"
-                                               FontFamily="icons"
-                                               FontSize="30"
-                                               VerticalOptions="Center">
-                                        </Label>
-                                        <Label x:Name="FlyoutItemLabel"
-                                               Grid.Column="1"
-                                            Text="{Binding Title}"
-                                            FontSize="15"
-                                            VerticalTextAlignment="Center">
-                                        </Label>
-                                    </Grid>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </VerticalStackLayout>
-            </ScrollView>
-        </DataTemplate>
-    </Shell.FlyoutContentTemplate>
-
-    <FlyoutItem Title="Началo">
-        <FlyoutItem.FlyoutIcon>
-            <FontImageSource FontFamily="icons" Glyph="{StaticResource IconHome}" />
-        </FlyoutItem.FlyoutIcon>
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
-    </FlyoutItem>
-
-    <FlyoutItem Title="Обяви">
-        <FlyoutItem.FlyoutIcon>
-            <FontImageSource FontFamily="icons" Glyph="{StaticResource IconBriefcaseSearch}" />
-        </FlyoutItem.FlyoutIcon>
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
-    </FlyoutItem>
-
-    <FlyoutItem Title="Новини">
-        <FlyoutItem.FlyoutIcon>
-            <FontImageSource FontFamily="icons" Glyph="{StaticResource IconNewspaper}" />
-        </FlyoutItem.FlyoutIcon>
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
-    </FlyoutItem>
-
-    <FlyoutItem Title="Настройки">
-        <FlyoutItem.FlyoutIcon>
-            <FontImageSource FontFamily="icons" Glyph="{StaticResource IconCog}" />
-        </FlyoutItem.FlyoutIcon>
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
-    </FlyoutItem>
-
-    <FlyoutItem Title="За нас">
-        <FlyoutItem.FlyoutIcon>
-            <FontImageSource FontFamily="icons" Glyph="{StaticResource IconInformation}" />
-        </FlyoutItem.FlyoutIcon>
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
-    </FlyoutItem>
-
-    <Shell.ToolbarItems>
-        <ToolbarItem Text=""
-                     IconImageSource="profile.png"
-                     Priority="1"
-                     Command="{Binding NavigateToLoginCommand}" />
-    </Shell.ToolbarItems>
+        <Tab Title="За нас">
+            <Tab.Icon>
+                <FontImageSource FontFamily="icons" Glyph="{StaticResource IconInformation}" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate views:SignupPage}" />
+        </Tab>
+    </TabBar>
 
 </Shell>
