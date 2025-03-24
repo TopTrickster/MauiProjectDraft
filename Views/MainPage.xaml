@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiProjectDraft.Views.MainPage">
+             x:Class="MauiProjectDraft.Views.MainPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}">
+    
 
     <Grid RowDefinitions="*, Auto">
 
@@ -49,8 +51,8 @@
                     Aspect="AspectFit"
                     SemanticProperties.Description="Main page image" />
 
-                <Frame Margin="0,20,0,0" CornerRadius="50" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
-                    <SearchBar x:Name="SearchBar" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"  />
+                <Frame Margin="0,20,0,0" CornerRadius="50" WidthRequest="325" HeightRequest="90" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
+                    <SearchBar x:Name="SearchBar" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
                 </Frame>
                 
                 <Label                   

@@ -54,7 +54,7 @@
                 HorizontalOptions="Start"/>
 
 
-                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
                     <HorizontalStackLayout HorizontalOptions="Center">
                         <Entry x:Name="Digit1" HorizontalTextAlignment="Center" FontAttributes="Bold" MaxLength="1" Keyboard="Numeric" TextChanged="OnDigitEntered" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>
                         <Entry x:Name="Digit2" HorizontalTextAlignment="Center" FontAttributes="Bold" MaxLength="1" Keyboard="Numeric" TextChanged="OnDigitEntered" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"/>

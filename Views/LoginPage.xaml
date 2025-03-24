@@ -66,7 +66,7 @@
                     HorizontalOptions="Start"/>
 
 
-                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
                     <Entry x:Name="EmailEntry"
                        Placeholder="Имейл"
                        PlaceholderColor="{StaticResource Gray300}"
@@ -78,7 +78,7 @@
 
 
 
-                <Frame CornerRadius="50" HeightRequest="80" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
+                <Frame CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
                     <Entry x:Name="PasswordEntry"
                        Placeholder="Парола"
                        PlaceholderColor="{StaticResource Gray300}"
