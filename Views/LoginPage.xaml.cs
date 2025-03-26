@@ -10,7 +10,7 @@ public partial class LoginPage : ContentPage
     private async void NavigateToProfileCommand(object sender, EventArgs e)
     {
         //await Shell.Current.GoToAsync("profile"); 
-        await Navigation.PushAsync(new Profile());
+        await Navigation.PushAsync(new ProfilePage());
     }
 
     private async void NavigateToForgottenPasswordCommand(object sender, EventArgs e)

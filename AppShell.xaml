@@ -25,14 +25,14 @@
             <Tab.Icon>
                 <FontImageSource FontFamily="icons" Glyph="{StaticResource IconNewspaper}" />
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+            <ShellContent ContentTemplate="{DataTemplate views:RecruiterProfilePage}" />
         </Tab>
 
         <Tab Title="Обяви">
             <Tab.Icon>
                 <FontImageSource FontFamily="icons" Glyph="{StaticResource IconMagnify}" />
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+            <ShellContent ContentTemplate="{DataTemplate views:WorkerProfilePage}" />
         </Tab>
 
         <Tab Title="Настройки">
