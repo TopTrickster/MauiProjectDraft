@@ -89,10 +89,29 @@
 
                     <Label Text="Въведете данните на Вашата кандидатура:"
                     TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
-                    Margin="15,15,0,0"
+                    Margin="15,15,0,10"
                     FontSize="16"
                     FontAttributes="None"
                     HorizontalOptions="Start"/>
+
+
+                    <Frame x:Name="ProfilePictureFrame"
+                        HeightRequest="150" WidthRequest="150"
+                        CornerRadius="100"
+                        BorderColor="{StaticResource LogoGreen}"
+                        BackgroundColor="Transparent"
+                        Padding="0"
+                        VerticalOptions="Center">
+                    </Frame>
+
+                    <Button Text="Добави профилна снимка" 
+                        HeightRequest="50" WidthRequest="325"
+                        BorderColor="{StaticResource LogoGreen}"
+                        BorderWidth="2"
+                        BackgroundColor="{StaticResource LogoGreen}"
+                        TextColor="Black"
+                        CornerRadius="50"
+                        FontSize="15"/>
 
                     <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{StaticResource LogoGreen}">
                         <Entry x:Name="LinkedInLink"
@@ -106,15 +125,6 @@
                     <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{StaticResource LogoGreen}">
                         <Entry x:Name="OtherLink"
                             Placeholder="Линк към друга социална медия"
-                            PlaceholderColor="{StaticResource Gray300}"
-                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
-                            FontSize="15"
-                            BackgroundColor="Transparent"/>
-                    </Frame>
-
-                    <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="250" WidthRequest="325" BorderColor="{StaticResource LogoGreen}">
-                        <Editor x:Name="Workerinfo"
-                            Placeholder="Друга нформация за Вас"
                             PlaceholderColor="{StaticResource Gray300}"
                             TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                             FontSize="15"
@@ -170,6 +180,15 @@
                             BackgroundColor="Transparent"/>
                     </Frame>
 
+                    <Frame x:Name="CompanyLogoFrame"
+                        HeightRequest="150" WidthRequest="150"
+                        CornerRadius="100"
+                        BorderColor="{StaticResource LogoRed}"
+                        BackgroundColor="Transparent"
+                        Padding="0"
+                        VerticalOptions="Center">
+                    </Frame>
+
                     <Button Text="Прикачи лого" 
                             HeightRequest="50" WidthRequest="325"
                             BorderColor="{StaticResource LogoRed}"
@@ -194,7 +213,7 @@
 
                     <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="250" WidthRequest="325" BorderColor="{StaticResource LogoRed}">
                         <Editor x:Name="CompanyInfo"
-                            Placeholder="Друга информация за компанията"
+                            Placeholder="Описание на фирмата"
                             PlaceholderColor="{StaticResource Gray300}"
                             TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                             FontSize="15"

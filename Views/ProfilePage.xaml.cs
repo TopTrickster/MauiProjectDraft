@@ -1,8 +1,8 @@
 namespace MauiProjectDraft.Views;
 
-public partial class Profile : ContentPage
+public partial class ProfilePage : ContentPage
 {
-	public Profile()
+	public ProfilePage()
 	{
 		InitializeComponent();
 	}

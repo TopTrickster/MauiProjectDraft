@@ -88,7 +88,7 @@
                         BackgroundColor="Transparent"
                         BorderWidth="1"
                         BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                        TextColor="Black"
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                         CornerRadius="50"
                         FontSize="15"
                         Clicked="OnDayButtonClicked"/>
@@ -100,7 +100,7 @@
                         BackgroundColor="Transparent"
                         BorderWidth="1"
                         BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                        TextColor="Black"
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                         CornerRadius="50"
                         FontSize="15"
                         Clicked="OnMonthButtonClicked"/>
@@ -112,7 +112,7 @@
                         BackgroundColor="Transparent"
                         BorderWidth="1"
                         BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                        TextColor="Black"
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                         CornerRadius="50"
                         FontSize="15"
                         Clicked="OnYearButtonClicked"/>
@@ -188,7 +188,7 @@
                     HeightRequest="50" WidthRequest="220"
                     BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     BorderWidth="2"
-                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource LogoOrange}}"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
                     CornerRadius="50"
                     FontSize="15"
                     Clicked="TogglePasswordVisibility"/>

@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace MauiProjectDraft.Views;
 
@@ -74,4 +74,26 @@ public partial class ProfileOptionsPage : ContentPage, INotifyPropertyChanged
             await DisplayAlert("File Selected", $"Name: {fileName}\nPath: {filePath}", "OK");
         }
     }
+
+    //private async void OnPickProfilePicture(object sender, EventArgs e)
+    //{
+    //    try
+    //    {
+    //        var result = await FilePicker.PickAsync(new PickOptions
+    //        {
+    //            FileTypes = FilePickerFileType.Images,
+    //            PickerTitle = "Избери профилна снимка"
+    //        });
+
+    //        if (result != null)
+    //        {
+    //            using var stream = await result.OpenReadAsync();
+    //            ProfilePicture.Source = ImageSource.FromStream(() => stream);
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        await DisplayAlert("Грешка", $"Неуспешно качване на снимка: {ex.Message}", "OK");
+    //    }
+    //}
 }
