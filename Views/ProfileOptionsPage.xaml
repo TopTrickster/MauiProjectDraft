@@ -42,7 +42,7 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-                <HorizontalStackLayout HorizontalOptions="Center" Padding="10,0" Spacing="20" Margin="0,15,0,0">
+                <HorizontalStackLayout HorizontalOptions="Center"  Padding="10,0" Spacing="20" Margin="0,15,0,0">
                     <Button Text="Работник"  
                         x:Name="WorkerButton"
                         HeightRequest="65" WidthRequest="140"
@@ -181,8 +181,8 @@
                     </Frame>
 
                     <Frame x:Name="CompanyLogoFrame"
-                        HeightRequest="150" WidthRequest="150"
-                        CornerRadius="100"
+                        HeightRequest="185" WidthRequest="325"
+                        CornerRadius="30"
                         BorderColor="{StaticResource LogoRed}"
                         BackgroundColor="Transparent"
                         Padding="0"
@@ -211,7 +211,7 @@
                             BackgroundColor="Transparent"/>
                     </Frame>
 
-                    <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="250" WidthRequest="325" BorderColor="{StaticResource LogoRed}">
+                    <Frame Margin="0,0,0,0" CornerRadius="30" HeightRequest="300" WidthRequest="325" BorderColor="{StaticResource LogoRed}">
                         <Editor x:Name="CompanyInfo"
                             Placeholder="Описание на фирмата"
                             PlaceholderColor="{StaticResource Gray300}"

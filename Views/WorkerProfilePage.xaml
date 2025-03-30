@@ -106,7 +106,7 @@
                                 Text="."
                                 TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                                 FontAttributes="Bold"
-                                FontSize="20"/>
+                                FontSize="18"/>
                             <Label                           
                                 x:Name="YearWorker"
                                 Text="2003"

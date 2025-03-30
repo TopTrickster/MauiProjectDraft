@@ -9,7 +9,7 @@
         <ScrollView Grid.Row="0">
             <VerticalStackLayout
             VerticalOptions="Start"
-            Padding="30,0,30,100"
+            Padding="0,0,0,100"
             Spacing="25">
 
                 <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
@@ -106,7 +106,7 @@
                                 Text="."
                                 TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                                 FontAttributes="Bold"
-                                FontSize="20"/>
+                                FontSize="18"/>
                             <Label                           
                                 x:Name="YearRec"
                                 Text="2003"
@@ -238,8 +238,8 @@
                         <HorizontalStackLayout Margin="0,-10,0,0" Spacing="10" HorizontalOptions="Start" >
 
                             <Frame x:Name="CompanyLogo2"
-                                HeightRequest="150" WidthRequest="150"
-                                CornerRadius="100"
+                                HeightRequest="135" WidthRequest="225"
+                                CornerRadius="30"
                                 BorderColor="{StaticResource LogoRed}"
                                 BackgroundColor="Transparent"
                                 Padding="0">
@@ -287,11 +287,14 @@
                             FontSize="15"/>
                         <HorizontalStackLayout Margin="0,-10,0,0" Spacing="10" HorizontalOptions="Start" >
                             <Label                           
-                                x:Name="CompanyTextInfo2"                               
-                                Text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro labore magni deleniti modi sed corporis mollitia in doloremque delectus id incidunt, adipisci enim cupiditate nihil autem rem, voluptatem laborum soluta."
+                                x:Name="CompanyTextInfo2"  
+                                Text="In a world where time moves fast, we seek moments that last. A smile, a kind word, or a shared laugh can make all the difference. Life is a journey, full of surprises and lessons. Embrace each day with hope, cherish loved ones, and never stop dreaming. The best stories are yet to be written aaaaaaa."
                                 TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                                 FontAttributes="None"
-                                FontSize="16"/>
+                                FontSize="16"
+                                LineBreakMode="WordWrap"
+                                MaxLines="10"
+                                WidthRequest="280"/>
                             <Button 
                                 Margin="0,-10,0,0"
                                 FontFamily="icons"

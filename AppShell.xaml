@@ -32,7 +32,7 @@
             <Tab.Icon>
                 <FontImageSource FontFamily="icons" Glyph="{StaticResource IconMagnify}" />
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate views:WorkerProfilePage}" />
+            <ShellContent ContentTemplate="{DataTemplate views:JobOfferPage}" />
         </Tab>
 
         <Tab Title="Настройки">
