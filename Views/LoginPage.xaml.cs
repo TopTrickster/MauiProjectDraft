@@ -9,19 +9,17 @@ public partial class LoginPage : ContentPage
 
     private async void NavigateToProfileCommand(object sender, EventArgs e)
     {
-        //await Shell.Current.GoToAsync("profile"); 
-        await Navigation.PushAsync(new ProfilePage());
+        await Navigation.PushAsync(new WorkerProfilePage());
     }
 
-    private async void NavigateToForgottenPasswordCommand(object sender, EventArgs e)
+    private async void NavigateToNewPassVerifCommand(object sender, EventArgs e)
     {
-        //await Shell.Current.GoToAsync("forgottenpassword"); 
-        await Navigation.PushAsync(new ForgottenPasswordPage());
+        await Navigation.PushAsync(new NewPassVerificationPage());
     }
 
     private async void NavigateToSignupCommand(object sender, EventArgs e)
     {
-        //await Shell.Current.GoToAsync("signup"); 
         await Navigation.PushAsync(new SignupPage());
     }
+
 }

@@ -45,19 +45,6 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-                <!--<Label Text="Вход за потребители. Ако сте фирма, натиснете отдолу:"
-                    Margin="15,0"
-                    FontSize="16"
-                    FontAttributes="None"
-                    HorizontalOptions="Start"/>
-
-                <Label Text="Вход за фирми"  
-                    Margin="15,-20,0,0"
-                    TextColor="{StaticResource LogoPurple}"  
-                    FontSize="16" 
-                    FontAttributes="Bold" 
-                    HorizontalOptions="Start"/>-->
-
                 <Label Text="Въведете Вашите данни:"
                     TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                     Margin="15,10,0,0"
@@ -120,7 +107,7 @@
                         FontAttributes="Bold" 
                         VerticalOptions="Center"
                         Padding="0"
-                        Clicked="NavigateToForgottenPasswordCommand"/>
+                        Clicked="NavigateToNewPassVerifCommand"/>
 
                     <BoxView WidthRequest="2" 
                         HeightRequest="20" 
