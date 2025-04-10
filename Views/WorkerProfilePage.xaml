@@ -214,16 +214,21 @@
                             TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                             FontSize="15"/>
                         <HorizontalStackLayout Margin="0,0,0,0" Spacing="10" HorizontalOptions="Start" >
-                            <Frame x:Name="ProfilePicture2"
+                            <Border x:Name="ProfilePicture2"
                                 HeightRequest="150" WidthRequest="150"
-                                CornerRadius="100"
-                                BorderColor="{StaticResource LogoGreen}"
+                                Stroke="{StaticResource LogoGreen}"
                                 BackgroundColor="Transparent"
                                 Padding="0">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="100" />
+                                </Border.StrokeShape>
+
+
                                 <Image
                                     Source="image1.png"
                                     Aspect="AspectFit"></Image>
-                            </Frame>
+                            </Border>
                             <Button 
                                     Margin="0,-10,0,0"
                                     FontFamily="icons"
