@@ -113,6 +113,9 @@
 	  <MauiXaml Update="Views\RecruiterProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\SearchOfferPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\SignupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
