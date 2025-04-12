@@ -543,7 +543,6 @@
                         BorderWidth="2"
                         BorderColor="{AppThemeBinding Light={StaticResource LogoRed}, Dark={StaticResource LogoRed}}"/>
 
-
             </VerticalStackLayout>
         </ScrollView>
 

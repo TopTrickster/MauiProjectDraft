@@ -64,6 +64,20 @@
                     BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     Clicked="NavigateToSearchOfferCommand"/>
 
+                <Button Text="Обява" 
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Margin="0,20,0,0"
+                    x:Name="NavigateToJobOffer"
+                    HeightRequest="65" WidthRequest="205"
+                    CornerRadius="50"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="2"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Clicked="NavigateToJobOfferCommand"/>
+
 
                 <BoxView 
                     Margin="0,20"

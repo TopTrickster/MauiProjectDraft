@@ -52,7 +52,7 @@
                         TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"/>
 
                         <Border
-                            Margin="0,10,0,0"
+                            Margin="0,20,0,0"
                             x:Name="CompanyLogo"                                
                             HeightRequest="135" WidthRequest="275"
                             Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
@@ -128,14 +128,17 @@
                                 MaxLines="2"/>
                         </HorizontalStackLayout>
 
-                        <Label
-                            HorizontalOptions="Center"
-                            Text="Описание на фирмата:"
-                            FontSize="18">
-                        </Label>
-                        <Label Padding="10,0,10,15"
-                            Text="In a world where time moves fast, we seek moments that last. A smile, a kind word, or a shared laugh can make all the difference. Life is a journey, full of surprises and lessons. Embrace each day with hope, cherish loved ones, and never stop dreaming. The best stories are yet to be written aaaaaaa.">
-                        </Label>
+                    <Label
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="Описание на фирмата:"
+                        FontAttributes="Bold"
+                        FontSize="20">
+                    </Label>
+                    <Label Padding="10,0,10,15"
+                           FontSize="15"
+                            Text="In a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaworld where time moves fast, we seek moments that last. A smile, a kind word, or a shared laugh can make all the difference. Life is a journey, full of surprises and lessons. Embrace each day with hope, cherish loved ones, and never stop dreaming. The best stories are yet to be written aaaaaaa.">
+                    </Label>
                     </VerticalStackLayout>
                     
 
@@ -150,6 +153,7 @@
                     Text="Обяви за работа:"
                     HorizontalOptions="Center"
                     TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                    FontAttributes="Bold"
                     FontSize="30">
                 </Label>
 

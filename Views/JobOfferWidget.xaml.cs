@@ -1,6 +1,6 @@
 namespace MauiProjectDraft.Views;
 
-public partial class JobOfferWidget : ContentPage
+public partial class JobOfferWidget : ContentView
 {
 	public JobOfferWidget()
 	{

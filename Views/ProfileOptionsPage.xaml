@@ -227,7 +227,6 @@
                             PlaceholderColor="{StaticResource Gray300}"
                             TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                             FontSize="15"
-                            MaxLength="500"
                             BackgroundColor="Transparent"/>
                     </Frame>
 
