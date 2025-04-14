@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MauiProjectDraft;
+namespace Headstarter;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

@@ -1,4 +1,4 @@
-namespace MauiProjectDraft.Views;
+namespace Headstarter.Views;
 
 public partial class JobOfferPage : ContentPage
 {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiProjectDraft.Views.LoginPage"
+             xmlns:controls="clr-namespace:Headstarter.Components"
+             x:Class="Headstarter.Views.LoginPage"
              Title="">
     <Grid RowDefinitions="*, Auto">
 
@@ -55,23 +56,25 @@
 
                 <Frame Margin="0,0,0,0" CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
                     <Entry x:Name="EmailEntry"
+                       Text="{Binding Email}"
                        Placeholder="Имейл"
                        PlaceholderColor="{StaticResource Gray300}"
                        Keyboard="Email"
                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
                        FontSize="15"
-                       BackgroundColor="Transparent"/>   
+                       BackgroundColor="Transparent"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Fill"
+                    />
                 </Frame>
 
-
-
                 <Frame CornerRadius="50" HeightRequest="80" WidthRequest="325" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
-                    <Entry x:Name="PasswordEntry"
-                       Placeholder="Парола"
-                       PlaceholderColor="{StaticResource Gray300}"
-                       TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
-                       FontSize="15"
-                       BackgroundColor="Transparent"/>   
+                    <controls:PasswordEntryView Text="{Binding Password}"
+                        Placeholder="Парола"
+                        PlaceholderColor="{StaticResource Gray300}"
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
+                        FontSize="15"
+                        EntryBackgroundColor="Transparent" />
                 </Frame>
 
                 <HorizontalStackLayout HorizontalOptions="Start" Padding="10,0" Spacing="10">
@@ -81,8 +84,6 @@
                         FontSize="14"
                         TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"/>
                 </HorizontalStackLayout>
-
-                
 
                 <Button Text="Вход" 
                         BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"

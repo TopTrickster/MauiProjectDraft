@@ -1,4 +1,6 @@
-namespace MauiProjectDraft.Views;
+using Headstarter.Views;
+
+namespace Headstarter.Components;
 
 public partial class Footer : ContentView
 {

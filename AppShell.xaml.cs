@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace MauiProjectDraft
+namespace Headstarter
 {
     public partial class AppShell : Shell
     {
