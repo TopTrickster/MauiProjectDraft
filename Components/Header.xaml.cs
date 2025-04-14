@@ -1,4 +1,4 @@
-namespace MauiProjectDraft.Views;
+namespace Headstarter.Components;
 
 public partial class Header : ContentView
 {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace MauiProjectDraft.Views;
+namespace Headstarter.Views;
 
 public partial class ProfileOptionsPage : ContentPage, INotifyPropertyChanged
 {

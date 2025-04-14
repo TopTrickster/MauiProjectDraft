@@ -1,4 +1,4 @@
-﻿namespace MauiProjectDraft
+﻿namespace Headstarter
 {
     public partial class App : Application
     {
