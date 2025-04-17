@@ -24,5 +24,9 @@
         {
             await Navigation.PushAsync(new CreateOfferPage());
         }
+        private async void NavigateToNewsCommand(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewsPage());
+        }
     }
 }

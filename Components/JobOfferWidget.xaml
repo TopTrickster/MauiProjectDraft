@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Headstarter.Components.JobOfferWidget">
 
-    <Frame Margin="0,10,0,0" Padding="0,0,0,0" WidthRequest="325" HeightRequest="170" CornerRadius="30" BackgroundColor="Transparent" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
+    <Frame Margin="0,10,0,0" Padding="5" WidthRequest="325" HeightRequest="170" CornerRadius="30" BackgroundColor="Transparent" BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" >
         <StackLayout>
             <Label     
                             Margin="15,10,0,0"
@@ -30,21 +30,6 @@
             <HorizontalStackLayout Spacing="10">
                 <Label   
                                 Margin="15,0,0,0"
-                                Text="Години опит:"
-                                TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
-                                FontAttributes="Bold"
-                                FontSize="16">
-                </Label>
-                <Label
-                                Margin="0,0,0,0"
-                                Text="0 - 2"
-                                TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
-                                FontSize="16">
-                </Label>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="10">
-                <Label   
-                                Margin="15,0,0,0"
                                 Text="Място:"
                                 TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                                 FontAttributes="Bold"
@@ -53,6 +38,21 @@
                 <Label
                                 Margin="0,0,0,0"
                                 Text="София"
+                                TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                                FontSize="16">
+                </Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label   
+                                Margin="15,0,0,0"
+                                Text="Години опит:"
+                                TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                                FontAttributes="Bold"
+                                FontSize="16">
+                </Label>
+                <Label
+                                Margin="0,0,0,0"
+                                Text="0 - 2"
                                 TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                                 FontSize="16">
                 </Label>
@@ -98,7 +98,7 @@
                             BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                             WidthRequest="100"
                             HeightRequest="50"
-                            Margin="0,-45,10,0">
+                            Margin="0,-50,10,0">
             </Button>
 
         </StackLayout>

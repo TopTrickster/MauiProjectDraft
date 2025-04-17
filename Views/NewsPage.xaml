@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Headstarter.Views.NewsPage"
+             Title="">
+
+    <Grid RowDefinitions="*, Auto">
+
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout
+                VerticalOptions="Start"
+                Padding="30,0,30,100"
+                Spacing="25">
+
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,30,0,-10">
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="HEAD"
+                        FontSize="44"
+                        FontFamily="LilitaOne"
+                        FontAttributes="None"
+                        TextColor="{StaticResource LogoGreen}"
+                        />
+
+                    <Image 
+                        Source="headstarter_logo2.png"
+                        HeightRequest="38"
+                        Aspect="AspectFit"/>
+
+                    <Label 
+                        Margin="0,0,0,0"
+                        Text="TARTER"
+                        FontSize="44"
+                        FontFamily="LilitaOne"
+                        FontAttributes="None"
+                        TextColor="{StaticResource LogoOrange}"
+                        />
+                </HorizontalStackLayout>
+                <Image
+                   HorizontalOptions="Center"
+                   Source="image41.png"
+                   HeightRequest="240"               
+                   Aspect="AspectFit"
+                   SemanticProperties.Description="Main page image" />
+
+                <Label   
+                   Margin="0,-20,0,20"
+                   Text="Новини в сферата"
+                   TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+
+                <Frame 
+                    Margin="0,10,0,0" 
+                    Padding="5" 
+                    WidthRequest="325" 
+                    HeightRequest="260"
+                    CornerRadius="30" 
+                    BackgroundColor="Transparent"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                    <StackLayout>
+                        <Label     
+                            Margin="15,10,0,0"
+                            Text="Мненията на служителите за Blankfactor"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                            FontAttributes="Bold"
+                            FontSize="18" />
+
+                        <Label
+                            Margin="15,10,0,0"
+                            Text="Запознайте се с професионалисти на различни позиции и вижте какво мислят за компанията като работодател."
+                            FontSize="15"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                        />
+
+                        <HorizontalStackLayout 
+                            Spacing="30" 
+                            HorizontalOptions="Start" 
+                            VerticalOptions="Center" 
+                            Margin="15,20,0,0">
+                            <Border
+                                HeightRequest="80" WidthRequest="150"
+                                StrokeLineCap="Round"
+                                Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                BackgroundColor="Transparent"
+                                Padding="0"
+                                VerticalOptions="Center">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="15" />
+                                </Border.StrokeShape>
+
+                                <Image
+                                    Source="image_bf.jpg"
+                                    Aspect="AspectFill" />
+                            </Border>
+
+                            <Button
+                                VerticalOptions="Center"
+                                Text="Виж"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                                CornerRadius="50"
+                                BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                WidthRequest="100"
+                                HeightRequest="50" />
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame 
+                    Margin="0,10,0,0" 
+                    Padding="10" 
+                    WidthRequest="325" 
+                    HeightRequest="310"
+                    CornerRadius="30" 
+                    BackgroundColor="Transparent"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                    <StackLayout>
+                        <Label     
+                            Margin="15,10,0,0"
+                            Text="Какво четат ИТ хората в България: д-р Марян Ризински, Bosch Digital"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                            FontAttributes="Bold"
+                            FontSize="18" />
+
+                        <Label
+                            Margin="15,10,0,0"
+                            Text="Д-р Ризински споделя 3 ценни съвета, които „Към себе си“ на Марк Аврелий дава за живота и работата на софтуерните специалисти."
+                            FontSize="15"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                        />
+
+                        <HorizontalStackLayout 
+                            Spacing="30" 
+                            HorizontalOptions="Start" 
+                            VerticalOptions="Center" 
+                            Margin="15,20,0,0">
+                            <Border
+                                HeightRequest="80" WidthRequest="150"
+                                StrokeLineCap="Round"
+                                Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                BackgroundColor="Transparent"
+                                Padding="0"
+                                VerticalOptions="Center">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="15" />
+                                </Border.StrokeShape>
+
+                                <Image
+                                    Source="image_bosch1.jpg"
+                                    Aspect="AspectFill" />
+                            </Border>
+
+                            <Button
+                                VerticalOptions="Center"
+                                Text="Виж"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                                CornerRadius="50"
+                                BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                WidthRequest="100"
+                                HeightRequest="50" />
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+
+
+</ContentPage>
