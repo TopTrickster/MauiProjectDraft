@@ -12,4 +12,8 @@ public partial class Footer : ContentView
     {
         await Navigation.PushAsync(new AboutUsPage());
     }
+    private async void OnQuestionsTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new QuestionsPage());
+    }
 }

@@ -51,6 +51,11 @@
                             BackgroundColor="Transparent"
                             BorderColor="Transparent"
                             CornerRadius="12">
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQuestionsTapped" />
+                </Frame.GestureRecognizers>
+
                 <HorizontalStackLayout
                                 Spacing="5"
                                 Padding="30,0">

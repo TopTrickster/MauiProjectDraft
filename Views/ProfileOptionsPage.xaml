@@ -227,7 +227,8 @@
                             Placeholder="Описание на фирмата"
                             PlaceholderColor="{StaticResource Gray300}"
                             TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
-                            FontSize="15"
+                            FontSize="15"                           
+                            AutoSize="TextChanges"
                             BackgroundColor="Transparent"/>
                     </Frame>
 
@@ -252,25 +253,6 @@
         </ScrollView>
 
 
-        <!--<FlexLayout Grid.Row="1"
-                Direction="Column"
-                AlignItems="Center"
-                JustifyContent="Center"
-                Padding="10"
-                BackgroundColor="{StaticResource LogoYellow}">
-
-            <Label Text=" aaaaaaaaaaaaaa"
-               TextColor="Black"
-               FontSize="16"
-               Background="{StaticResource LogoGreen}"
-               Padding="100,5"/>
-
-            <Label Text="Headstarter 2025"
-               TextColor="Black"
-               FontSize="16"
-               Background="{StaticResource LogoGreen}"
-               Padding="100,5"/>
-        </FlexLayout>-->
 
     </Grid>
 </ContentPage>

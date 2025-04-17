@@ -15,36 +15,32 @@
                 <controls:Header></controls:Header>
 
                 <VerticalStackLayout Spacing="20" Margin="0,20,0,0">
-                        <Label                            
+                    <Label                            
                         Text="Borislavia Inc" 
                         HorizontalOptions="Fill"  
                         HorizontalTextAlignment="Center"
                         HeightRequest="100"
                         WidthRequest="400"
-                        VerticalTextAlignment="Center"
-                        
+                        VerticalTextAlignment="Center"                       
                         FontSize="35"
                         FontFamily="Boldnose"
                         FontAttributes="Bold"
                         BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                         TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"/>
+                    <Border
+                        Margin="0,20,0,0"
+                        x:Name="CompanyLogo"                                
+                        HeightRequest="135" WidthRequest="275"
+                        Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                        BackgroundColor="Transparent"
+                        Padding="0">
 
-                        <Border
-                            Margin="0,20,0,0"
-                            x:Name="CompanyLogo"                                
-                            HeightRequest="135" WidthRequest="275"
-                            Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
-                            BackgroundColor="Transparent"
-                            Padding="0">
-
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="30" />
-                            </Border.StrokeShape>
-
-
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
                         <Image
-                                Source="image1.png"
-                                Aspect="AspectFit"></Image>
+                            Source="image1.png"
+                            Aspect="AspectFit"></Image>
                         </Border>
 
                         <HorizontalStackLayout Spacing="10" Padding="0,0" Margin="10,0,0,0">
@@ -66,45 +62,71 @@
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout Spacing="10" Margin="10,-10,0,0" Padding="0,0">
+                            <Label 
+                                Margin="0,0,0,0"
+                                FontFamily="icons"
+                                TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" FontSize="25"
+                                Text="{StaticResource IconClock}"
+                                BackgroundColor="Transparent">
+                            </Label>
+                            <Label                               
+                                Margin="0,0,0,0"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Start"
+                                Text="Член на HEADSTARTER от:"
+                                LineBreakMode="WordWrap"
+                                MaxLines="1"/>
+                            <Label                               
+                                Margin="0,0,0,0"
+                                VerticalTextAlignment="Center"
+                                Text="12.12.2022"
+                                LineBreakMode="WordWrap"
+                                MaxLines="2"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10" Margin="10,-10,0,0" Padding="0,0">
                         <Label 
                             Margin="0,0,0,0"
                             FontFamily="icons"
                             TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" FontSize="25"
-                            Text="{StaticResource IconClock}"
+                            Text="{StaticResource IconLink}"
                             BackgroundColor="Transparent">
                         </Label>
                         <Label                               
                             Margin="0,0,0,0"
                             VerticalTextAlignment="Center"
                             HorizontalTextAlignment="Start"
-                            Text="Член на HEADSTARTER от:"
+                            Text="https://www.sap.com/bulgaria/index.html"
                             LineBreakMode="WordWrap"
-                            MaxLines="1"/>
-                        <Label                               
-                            Margin="0,0,0,0"
-                            VerticalTextAlignment="Center"
-                            Text="12.12.2022"
-                            LineBreakMode="WordWrap"
+                            WidthRequest="250"
                             MaxLines="2"/>
-                    </HorizontalStackLayout>
-
+                        </HorizontalStackLayout>
                         <HorizontalStackLayout Spacing="10" Margin="10,-10,0,0" Padding="0,0">
-                        <Label 
+                            <Label 
                                 Margin="0,0,0,0"
                                 FontFamily="icons"
                                 TextColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}" FontSize="25"
-                                Text="{StaticResource IconLink}"
+                                Text="{StaticResource IconPhone}"
                                 BackgroundColor="Transparent">
-                        </Label>
+                            </Label>
                             <Label                               
                                 Margin="0,0,0,0"
                                 VerticalTextAlignment="Center"
                                 HorizontalTextAlignment="Start"
-                                Text="https://www.sap.com/bulgaria/index.html"
+                                Text="Телефон за връзка:"
                                 LineBreakMode="WordWrap"
-                                WidthRequest="250"
+                                MaxLines="1"/>
+
+                        <!-- vzima se telefona koito e rabotodatelq e slojil oshte na purvata stranica na registraciqta, vse edno lichniq mu telefon (ot SignUpPage.xaml)-->
+                            
+                            <Label                               
+                                Margin="0,0,0,0"
+                                VerticalTextAlignment="Center"                              
+                                Text="+359 988 329 931"   
+                                LineBreakMode="WordWrap"
                                 MaxLines="2"/>
                         </HorizontalStackLayout>
+
 
                     <Label
                         HorizontalOptions="Center"
@@ -113,11 +135,12 @@
                         FontAttributes="Bold"
                         FontSize="20">
                     </Label>
-                    <Label Padding="10,0,10,15"
-                           FontSize="15"
-                            Text="In a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaworld where time moves fast, we seek moments that last. A smile, a kind word, or a shared laugh can make all the difference. Life is a journey, full of surprises and lessons. Embrace each day with hope, cherish loved ones, and never stop dreaming. The best stories are yet to be written aaaaaaa.">
+                    <Label 
+                        Padding="10,0,10,15"
+                        FontSize="15"
+                        Text="In a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaworld where time moves fast, we seek moments that last. A smile, a kind word, or a shared laugh can make all the difference. Life is a journey, full of surprises and lessons. Embrace each day with hope, cherish loved ones, and never stop dreaming. The best stories are yet to be written aaaaaaa.">
                     </Label>
-                    </VerticalStackLayout>
+                </VerticalStackLayout>
                     
 
                 <BoxView 

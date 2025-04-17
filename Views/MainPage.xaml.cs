@@ -20,5 +20,9 @@
         {
             await Navigation.PushAsync(new JobOfferPage());
         }
+        private async void NavigateToCreateOfferCommand(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CreateOfferPage());
+        }
     }
 }
