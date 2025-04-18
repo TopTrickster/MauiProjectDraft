@@ -55,7 +55,7 @@
                     Margin="0,10,0,0" 
                     Padding="5" 
                     WidthRequest="325" 
-                    HeightRequest="260"
+                    HeightRequest="325"
                     CornerRadius="30" 
                     BackgroundColor="Transparent"
                     BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
@@ -71,7 +71,7 @@
                             Margin="15,10,0,0"
                             Text="Запознайте се с професионалисти на различни позиции и вижте какво мислят за компанията като работодател."
                             FontSize="15"
-                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray400}}"
                         />
 
                         <HorizontalStackLayout 
@@ -114,7 +114,7 @@
                     Margin="0,10,0,0" 
                     Padding="10" 
                     WidthRequest="325" 
-                    HeightRequest="310"
+                    HeightRequest="325"
                     CornerRadius="30" 
                     BackgroundColor="Transparent"
                     BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
@@ -130,7 +130,7 @@
                             Margin="15,10,0,0"
                             Text="Д-р Ризински споделя 3 ценни съвета, които „Към себе си“ на Марк Аврелий дава за живота и работата на софтуерните специалисти."
                             FontSize="15"
-                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray400}}"
                         />
 
                         <HorizontalStackLayout 

@@ -28,5 +28,18 @@
         {
             await Navigation.PushAsync(new NewsPage());
         }
+        private async void NavigateToNewsTemplateCommand(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewsTemplatePage());
+        }
+        private async void NavigateToNotWorkerCommand(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NotWorkerPage());
+        }
+        private async void NavigateToNotRecruiterCommand(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NotRecruiterPage());
+        }
+
     }
 }

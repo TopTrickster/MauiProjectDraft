@@ -129,6 +129,7 @@
 
 
                     <Label
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Описание на фирмата:"
@@ -138,6 +139,7 @@
                     <Label 
                         Padding="10,0,10,15"
                         FontSize="15"
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
                         Text="In a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaworld where time moves fast, we seek moments that last. A smile, a kind word, or a shared laugh can make all the difference. Life is a journey, full of surprises and lessons. Embrace each day with hope, cherish loved ones, and never stop dreaming. The best stories are yet to be written aaaaaaa.">
                     </Label>
                 </VerticalStackLayout>

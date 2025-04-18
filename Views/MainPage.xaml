@@ -93,7 +93,7 @@
                     BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     Clicked="NavigateToCreateOfferCommand"/>
 
-                <Button Text="Новина" 
+                <Button Text="Новини" 
                     BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     Margin="0,20,0,0"
                     x:Name="NavigateToNews"
@@ -106,6 +106,49 @@
                     BorderWidth="2"
                     BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
                     Clicked="NavigateToNewsCommand"/>
+
+                <Button Text="Новина шаблон" 
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Margin="0,20,0,0"
+                    x:Name="NavigateToNewsTemplate"
+                    HeightRequest="65" WidthRequest="205"
+                    CornerRadius="50"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="2"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Clicked="NavigateToNewsTemplateCommand"/>
+
+                <Button Text="Не работник" 
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Margin="0,20,0,0"
+                    x:Name="NavigateToNotWorker"
+                    HeightRequest="65" WidthRequest="205"
+                    CornerRadius="50"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="2"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Clicked="NavigateToNotWorkerCommand"/>
+
+                <Button Text="Не работодател" 
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Margin="0,20,0,0"
+                    x:Name="NavigateToNotRecruiter"
+                    HeightRequest="65" WidthRequest="205"
+                    CornerRadius="50"
+                    TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    BorderWidth="2"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    Clicked="NavigateToNotRecruiterCommand"/>
+
 
 
 
@@ -321,6 +364,138 @@
                             HeightRequest="50"
                             Margin="0,-45,10,0">
                         </Button>
+                    </StackLayout>
+                </Frame>
+
+                <BoxView 
+                    Margin="0,20,0,10"
+                    WidthRequest="325" 
+                    HeightRequest="1" 
+                    BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                    VerticalOptions="Center"/>
+
+                <Label                   
+                    Text="Последните новини"
+                    TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"/>
+
+                <Frame 
+                    Margin="0,10,0,0" 
+                    Padding="5" 
+                    WidthRequest="325" 
+                    HeightRequest="325"
+                    CornerRadius="30" 
+                    BackgroundColor="Transparent"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                    <StackLayout>
+                        <Label     
+                            Margin="15,10,0,0"
+                            Text="Мненията на служителите за Blankfactor"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                            FontAttributes="Bold"
+                            FontSize="18" />
+
+                        <Label
+                            Margin="15,10,0,0"
+                            Text="Запознайте се с професионалисти на различни позиции и вижте какво мислят за компанията като работодател."
+                            FontSize="15"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                        />
+
+                        <HorizontalStackLayout 
+                            Spacing="30" 
+                            HorizontalOptions="Start" 
+                            VerticalOptions="Center" 
+                            Margin="15,20,0,0">
+                            <Border
+                                HeightRequest="80" WidthRequest="150"
+                                StrokeLineCap="Round"
+                                Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                BackgroundColor="Transparent"
+                                Padding="0"
+                                VerticalOptions="Center">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="15" />
+                                </Border.StrokeShape>
+
+                                <Image
+                                    Source="image_bf.jpg"
+                                    Aspect="AspectFill" />
+                            </Border>
+
+                            <Button
+                                VerticalOptions="Center"
+                                Text="Виж"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                                CornerRadius="50"
+                                BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                WidthRequest="100"
+                                HeightRequest="50" />
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame 
+                    Margin="0,10,0,0" 
+                    Padding="10" 
+                    WidthRequest="325" 
+                    HeightRequest="325"
+                    CornerRadius="30" 
+                    BackgroundColor="Transparent"
+                    BorderColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}">
+                    <StackLayout>
+                        <Label     
+                            Margin="15,10,0,0"
+                            Text="Какво четат ИТ хората в България: д-р Марян Ризински, Bosch Digital"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                            FontAttributes="Bold"
+                            FontSize="18" />
+
+                        <Label
+                            Margin="15,10,0,0"
+                            Text="Д-р Ризински споделя 3 ценни съвета, които „Към себе си“ на Марк Аврелий дава за живота и работата на софтуерните специалисти."
+                            FontSize="15"
+                            TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Gray100}}"
+                        />
+
+                        <HorizontalStackLayout 
+                            Spacing="30" 
+                            HorizontalOptions="Start" 
+                            VerticalOptions="Center" 
+                            Margin="15,20,0,0">
+                            <Border
+                                HeightRequest="80" WidthRequest="150"
+                                StrokeLineCap="Round"
+                                Stroke="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                BackgroundColor="Transparent"
+                                Padding="0"
+                                VerticalOptions="Center">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="15" />
+                                </Border.StrokeShape>
+
+                                <Image
+                                    Source="image_bosch1.jpg"
+                                    Aspect="AspectFill" />
+                            </Border>
+
+                            <Button
+                                VerticalOptions="Center"
+                                Text="Виж"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="{AppThemeBinding Light={StaticResource LogoPurpleLight}, Dark={StaticResource Black}}"
+                                CornerRadius="50"
+                                BackgroundColor="{AppThemeBinding Light={StaticResource LogoPurple}, Dark={StaticResource LogoOrange}}"
+                                WidthRequest="100"
+                                HeightRequest="50" />
+                        </HorizontalStackLayout>
                     </StackLayout>
                 </Frame>
 
